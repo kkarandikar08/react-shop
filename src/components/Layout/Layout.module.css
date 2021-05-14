@@ -1,0 +1,10 @@
+/*.container {*/
+/*    display: grid;*/
+/*    grid-template-rows: 1fr 2fr 1fr;*/
+/*    !*grid-template-areas:*!*/
+/*    !*        'header header header'*!*/
+/*    !*        'main main main'*!*/
+/*    !*        'footer footer footer';*!*/
+/*    grid-gap: 10px;*/
+/*    background-color: orange;*/
+/*}*/

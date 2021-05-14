@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: scroll;
+    padding-bottom: 25px;
+}
+
+.card {
+    box-shadow: 2px 2px 6px 0 rgba(0,0,0,.3);
+}
