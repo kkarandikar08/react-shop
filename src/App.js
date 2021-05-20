@@ -1,17 +1,14 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { Fragment } from 'react';
 
-
-import './App.css';
-import Layout from "./components/Layout/Layout";
+import Home from "./components/Home/Home";
+import Products from "./components/Products/Products";
 
 function App() {
-  const state = useSelector(state => state);
-  console.log(state);
   return (
-    <div className="App">
-      <Layout/>
-    </div>
+      <Fragment>
+        {/*<Home/>*/}
+        <Products/>
+      </Fragment>
   );
 }
 

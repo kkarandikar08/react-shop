@@ -1,15 +1,25 @@
 import React from "react";
-import * as styles from './Header.module.css'
-import { MdShoppingCart, MdShoppingBasket, MdSettings } from 'react-icons/md';
+
+import styles from './Header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
+import logo from '../../assets/logo.jpeg';
 
 const Header = () => {
     return(
-        <div className={styles.container}>
-            <MdShoppingCart className={styles.logo}/>
-            <label htmlFor="header" className={styles.label}>THE REACT SHOP</label>
-            <div className={styles.headerRight}>
-                <MdShoppingBasket className={styles.cart}/>
-                <MdSettings className={styles.settings}/>
+        <div className={styles.header}>
+            <img src={logo} className={styles.logo} alt=""/>
+            <form action="" className={styles.search}>
+                <input type="text" className={styles.search__input} placeholder="Search All Products"/>
+                <FontAwesomeIcon className={styles.search__icon} icon={faSearch}/>
+            </form>
+
+            <div className={styles.shopping_cart}>
+                <FontAwesomeIcon className={styles.icon__shopping_cart} icon={faShoppingCart}/>
+                <span className={styles.notification}>
+                    4
+                </span>
             </div>
         </div>
     )

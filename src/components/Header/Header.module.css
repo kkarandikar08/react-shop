@@ -1,62 +1,81 @@
-.container {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100px;
-    width: 100%;
+.header {
     display: flex;
-    background-color: black;
-    justify-content: center;
+    justify-content: space-between;
+    color: black;
     align-items: center;
-    z-index: 999;
+    height: 8rem;
+    background-image: linear-gradient(lightgrey, white);
 }
 
 .logo {
-    position: absolute;
-    fill: white;
-    left: 15px;
-    height: 55px;
-    width: 55px;
-    padding: 10px;
-    cursor: pointer;
+    width: 6rem;
+    height: 4.5rem;
+    margin-left: 2rem;
 }
 
-.label {
-    font-size: 50px;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.headerRight {
-    display: inline-flex;
+.search {
+    position: relative;
+    display: flex;
+    flex: 0 0 40%;
     align-items: center;
-    position: absolute;
-    right: 15px;
+
 }
 
-.cart {
-    fill: white;
-    height: 55px;
-    width: 55px;
-    padding: 10px;
-    transition: all .2s ease-out;
+.search__input {
+    border-radius: 100px;
+    border: none;
+    height: 2rem;
+    width: 80%;
+    background-color: #f4f2f2;
+    transition: all .4s;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-.cart:hover {
-    transform: scale(1.2);
+.search__input::placeholder {
+    color: #d3d3d3;
+}
+
+.search__input:focus {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.search__icon {
+    position: relative;
+    right: 2rem;
+}
+
+.shopping_cart {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+    border: none;
+}
+
+.icon__shopping_cart {
+    transform: scale(2.5);
+    color: #454b4a;
+}
+.shopping_cart:active > .icon__shopping_cart {
     transition: all .2s;
+    transform: translateY(.2rem);
 }
 
-.settings {
-    fill: white;
-    height: 55px;
-    width: 55px;
-    padding: 10px;
-    transition: all .2s ease-out;
-}
-
-.settings:hover {
-    transform: scale(1.2);
-    transition: all .2s;
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 100px;
+    top: -1.5rem;
 }
