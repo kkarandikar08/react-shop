@@ -3,25 +3,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 15rem;
-    min-height: 10rem;
+    width: 25rem;
+    min-height: 25rem;
     max-height: 20rem;
-    /*background-color: lightgrey;*/
     box-shadow: 0 2px 3px 3px rgba(0,0,0,0.2);
+    transition: all .2s;
+    cursor: pointer;
+}
 
+.card:hover {
+    transform: scale(1.1);
 }
 
 .image {
     margin-top: 2rem;
-    width: 8rem;
-    height: 8rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 .divider {
     border: 1px solid black;
     color: red;
-    width: 8rem;
-
+    width: 80%;
 }
 
 .title {
@@ -36,20 +39,3 @@
     text-transform: uppercase;
 }
 
-.addToCart {
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    width: 10rem;
-    padding: .5rem;
-    outline: none;
-    border: #fd5c1a;
-    background-color: #fd5c1a;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.addToCart:active {
-    transform: translateY(.2rem);
-}

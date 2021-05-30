@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-rows: 8rem 4rem repeat(4, 100vh);
-    grid-gap: .3rem;
+    grid-template-rows: 8rem 4rem auto;
+    /*grid-gap: .3rem;*/
 }
 
 .shop-navigation {
@@ -23,28 +23,14 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .images {
     cursor: pointer;
-    object-fit: fill;
-    width:100%;
-    height:100%;
+    height: 80vh;
 }
 
-.shop-men{
-    object-fit: fill;
-    background-color: red;
-}
-
-.shop-women{
-    background-color: green;
-}
-
-.shop-footwear{
-    background-color: orange;
-}
-
-.shop-accessories {
-    background-color: blue;
+.shop-carousel {
+    height: 80vh;
 }

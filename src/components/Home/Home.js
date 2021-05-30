@@ -2,11 +2,13 @@ import React from "react";
 
 import styles from './Home.module.css';
 
-import shopMen from "../../assets/shop-men.jpg";
-import shopWomen from "../../assets/shop-women.jpg";
-import shopAccessories from "../../assets/shop-accessories.jpeg";
-import shopFootwear from "../../assets/shop-footwear.png";
+import shopMen from "../../assets/wp3646129.jpeg";
+import shopWomen from "../../assets/b56765a2c23a6f48caed41d12cff4c46.jpeg";
+import shopFootwear from "../../assets/680074.jpeg";
 import Header from "../Header/Header";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
     return (
@@ -25,17 +27,19 @@ const Home = () => {
                     <button href="" className={styles["shop-navigation__buttons"]}>Shop Accessories</button>
                 </ul>
             </nav>
-            <div className={styles["shop-men"]}>
-                <img className={styles.images} src={shopMen} alt="" />
-            </div>
-            <div className={styles["shop-women"]}>
-                <img className={styles.images} src={shopWomen} alt="" />
-            </div>
-            <div className={styles["shop-footwear"]}>
-                <img className={styles.images} src={shopFootwear} alt="" />
-            </div>
-            <div className={styles["shop-accessories"]}>
-                <img className={styles.images} src={shopAccessories} alt="" />
+            <div className={styles["shop-carousel"]}>
+                    <Carousel
+                        showThumbs={false}
+                        autoPlay={true}
+                        infiniteLoop={true}
+                        showArrows={false}
+                        showStatus={false}
+                        interval={5000}
+                    >
+                            <img className={styles.images} src={shopMen} alt="" />
+                            <img className={styles.images} src={shopWomen} alt="" />
+                            <img className={styles.images} src={shopFootwear} alt="" />
+                    </Carousel>
             </div>
         </div>
     )

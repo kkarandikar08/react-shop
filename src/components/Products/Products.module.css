@@ -4,6 +4,7 @@
     "header header"
     "sidebar main";
     grid-template-columns: 10rem auto;
+    overflow: hidden;
 
 }
 
@@ -15,16 +16,17 @@
     grid-area: sidebar;
     background-color: red;
     width: 10rem;
-    height: 100vh;
-
+    height: 100%;
+    margin-bottom: -5000px; /* any large number will do */
+    padding-bottom: 5000px;
 }
 
 .products {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     overflow: scroll;
-    height: 80vh;
+    height: 100%;
 }
 
 .products__card {

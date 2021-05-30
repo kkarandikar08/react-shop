@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from './Card.module.css';
 
-import testImage from '../../assets/1528.jpg';
+import testImage from '../../assets/8265443_fpx.jpeg';
 
 const Card = (props) => {
     return (
@@ -11,7 +11,6 @@ const Card = (props) => {
             <hr className={styles.divider}/>
             <div className={styles.title}>Title</div>
             <p className={styles.price}>$12</p>
-            <button className={styles.addToCart}>Add To Cart</button>
         </div>
     )
 };

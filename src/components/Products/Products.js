@@ -14,23 +14,56 @@ const Products = () => {
                 <main className={styles.products} >
                     <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
-                    </div><div className={styles.products__card}>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
+                        <Card/>
+                    </div>
+                    <div className={styles.products__card}>
                         <Card/>
                     </div>
                 </main>
