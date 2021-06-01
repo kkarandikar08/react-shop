@@ -1,4 +1,5 @@
 import React from "react";
+import {  useHistory } from "react-router-dom";
 
 import styles from './Home.module.css';
 
@@ -11,6 +12,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
+    const history = useHistory();
     return (
         <div className={styles.container}>
             <header>
@@ -18,13 +20,19 @@ const Home = () => {
             </header>
             <nav className={styles["shop-navigation"]}>
                 <ul>
-                    <button href="" className={styles["shop-navigation__buttons"]}>Shop Men</button>
-                </ul><ul>
-                    <button href="" className={styles["shop-navigation__buttons"]}>Shop Women</button>
-                </ul><ul>
-                    <button href="" className={styles["shop-navigation__buttons"]}>Shop Footwear</button>
-                </ul><ul>
-                    <button href="" className={styles["shop-navigation__buttons"]}>Shop Accessories</button>
+                    <button onClick={() => history.push('/products?category=shop-all')} className={styles["shop-navigation__buttons"]}>Shop All Products</button>
+                </ul>
+                <ul>
+                    <button onClick={() => history.push('/products/?category=shop-men')} className={styles["shop-navigation__buttons"]}>Shop Men</button>
+                </ul>
+                <ul>
+                    <button onClick={() => history.push('/products/?category=shop-women')} className={styles["shop-navigation__buttons"]}>Shop Women</button>
+                </ul>
+                <ul>
+                    <button onClick={() => history.push('/products/?category=shop-footwear')} className={styles["shop-navigation__buttons"]}>Shop Footwear</button>
+                </ul>
+                <ul>
+                    <button onClick={() => history.push('/products/?category=shop-accessories')} className={styles["shop-navigation__buttons"]}>Shop Accessories</button>
                 </ul>
             </nav>
             <div className={styles["shop-carousel"]}>
