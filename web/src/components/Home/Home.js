@@ -20,19 +20,19 @@ const Home = () => {
             </header>
             <nav className={styles["shop-navigation"]}>
                 <ul>
-                    <button onClick={() => history.push('/products?category=shop-all')} className={styles["shop-navigation__buttons"]}>Shop All Products</button>
+                    <button onClick={() => history.push('/products?category=all')} className={styles["shop-navigation__buttons"]}>Shop All Products</button>
                 </ul>
                 <ul>
-                    <button onClick={() => history.push('/products/?category=shop-men')} className={styles["shop-navigation__buttons"]}>Shop Men</button>
+                    <button onClick={() => history.push('/products/?category=men')} className={styles["shop-navigation__buttons"]}>Shop Men</button>
                 </ul>
                 <ul>
-                    <button onClick={() => history.push('/products/?category=shop-women')} className={styles["shop-navigation__buttons"]}>Shop Women</button>
+                    <button onClick={() => history.push('/products/?category=women')} className={styles["shop-navigation__buttons"]}>Shop Women</button>
                 </ul>
                 <ul>
-                    <button onClick={() => history.push('/products/?category=shop-footwear')} className={styles["shop-navigation__buttons"]}>Shop Footwear</button>
+                    <button onClick={() => history.push('/products/?category=footwear')} className={styles["shop-navigation__buttons"]}>Shop Footwear</button>
                 </ul>
                 <ul>
-                    <button onClick={() => history.push('/products/?category=shop-accessories')} className={styles["shop-navigation__buttons"]}>Shop Accessories</button>
+                    <button onClick={() => history.push('/products/?category=accessories')} className={styles["shop-navigation__buttons"]}>Shop Accessories</button>
                 </ul>
             </nav>
             <div className={styles["shop-carousel"]}>

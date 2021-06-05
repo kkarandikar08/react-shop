@@ -3,12 +3,15 @@ import Header from "../Header/Header";
 
 import styles from './ProductDetail.module.css';
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import testImage from '../../assets/8265443_fpx.jpeg'
 
 const ProductDetail = () => {
+
+    const addItemToCartHandler = () => {
+    }
     return(
         <div className={styles.container}>
             <Header/>
@@ -71,7 +74,7 @@ const ProductDetail = () => {
                         <hr className={styles.divider}/>
                         <h3>Price</h3>
                         <h4>Lorem Ipsum</h4>
-                        <button className={styles["add-to-cart__button"]}>Add to Bag</button>
+                        <button onClick={addItemToCartHandler} className={styles["add-to-cart__button"]}>Add to Bag</button>
                     </div>
                 </div>
             </main>

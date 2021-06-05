@@ -25,11 +25,10 @@
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow: scroll;
-    height: 100%;
+    margin-bottom: 2rem;
 }
 
 .products__card {
-    margin-top: 4rem;
-    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }

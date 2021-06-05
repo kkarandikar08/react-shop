@@ -12,6 +12,9 @@
 # production
 /build
 
+rest-api/node_modules
+web/node_modules
+
 # misc
 .DS_Store
 .env.local
