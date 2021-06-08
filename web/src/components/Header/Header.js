@@ -6,8 +6,11 @@ import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import logo from '../../assets/logo.jpeg';
 import {Link} from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+
+    const cartQuantity = useSelector(state => state.cart.totalQuantity);
     return(
         <div className={styles.header}>
             <Link to={'/'}>
@@ -21,7 +24,7 @@ const Header = () => {
             <div className={styles.shopping_cart}>
                 <FontAwesomeIcon className={styles.icon__shopping_cart} icon={faShoppingCart}/>
                 <span className={styles.notification}>
-                    4
+                    {cartQuantity}
                 </span>
             </div>
         </div>

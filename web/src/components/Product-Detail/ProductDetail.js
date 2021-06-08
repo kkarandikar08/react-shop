@@ -1,16 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Header from "../Header/Header";
 
 import styles from './ProductDetail.module.css';
+import { useDispatch, useSelector } from "react-redux";
 
+import testImage from '../../assets/8265443_fpx.jpeg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import testImage from '../../assets/8265443_fpx.jpeg'
+import { addToBag } from '../../store/cart-slice';
+
 
 const ProductDetail = () => {
+    const dispatch = useDispatch();
 
     const addItemToCartHandler = () => {
+        dispatch(addToBag());
+
     }
     return(
         <div className={styles.container}>

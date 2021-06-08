@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Header from "../Header/Header";
 
 import styles from './Products.module.css';
@@ -29,66 +29,12 @@ const Products = (props) => {
                     {
                         loading ? <div>Loading</div> : products?.products?.payload?.map(p => <div key={p.id} className={styles.products__card}>
                         <Card
-                            id={1}
+                            id={p.id}
                             title={p.title}
                             price={p.price}
                         />
                     </div>
                     )}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card id={1}/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.products__card}>*/}
-                    {/*    <Card/>*/}
-                    {/*</div>*/}
                 </main>
         </div>
     )

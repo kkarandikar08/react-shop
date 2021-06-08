@@ -1,4 +1,4 @@
-import { createSlice, configureStore } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import axios from "axios";
 
 const initialState = {
@@ -31,7 +31,7 @@ export const { getProducts, getProductsSuccess, getProductsFailure } = products.
 
 export const fetchProducts = (category) => {
     return async dispatch => {
-        dispatch(getProducts);
+        dispatch(getProducts());
 
         try {
             const response = await axios.get('http://localhost:3000/products', {params: {
