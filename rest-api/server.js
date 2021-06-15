@@ -16,15 +16,8 @@ app.get('/products', (req, res ) => {
         title: 'Men\'s Classic Fit Performance Deck Polo',
         description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
         price: "59.50",
-        images: [
-            {
-                color: 'white',
-                url: [
-                    'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                    'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                ]
-            }
-        ]
+        frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+        backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
     },
         {
             id: 2,
@@ -33,15 +26,8 @@ app.get('/products', (req, res ) => {
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
         },
         {
             id: 3,
@@ -50,15 +36,8 @@ app.get('/products', (req, res ) => {
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
         },
         {
             id: 4,
@@ -67,15 +46,8 @@ app.get('/products', (req, res ) => {
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
         },
         {
             id: 5,
@@ -84,15 +56,8 @@ app.get('/products', (req, res ) => {
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
         },
         {
             id: 6,
@@ -101,15 +66,8 @@ app.get('/products', (req, res ) => {
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
         },
         {
             id: 7,
@@ -118,15 +76,8 @@ app.get('/products', (req, res ) => {
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
         },
         {
             id: 8,
@@ -135,31 +86,18 @@ app.get('/products', (req, res ) => {
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
-        },{
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
+        },
+        {
             id: 9,
             category:"men",
             subCategory:"polos",
             title: 'Men\'s Classic Fit Performance Deck Polo',
             description: 'The classic silhouette of this solid polo from Nautica always looks handsome.',
             price: "59.50",
-            images: [
-                {
-                    color: 'white',
-                    url: [
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Front_White.jpeg',
-                        'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg'
-                    ]
-                }
-            ]
+            frontImage: 'https://react-shop-kk.s3.us-west-2.amazonaws.com/Men\'s_AlfaTech_Stretch_Solid_Polo_Shirt_Front.jpeg',
+            backImage: 'https://react-shop-kk.s3-us-west-2.amazonaws.com/Nautica_Men\'s_Classic_Fit_Performance_Deck_Polo_Back_White.jpeg',
         }
     ])
 })

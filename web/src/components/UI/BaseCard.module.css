@@ -9,6 +9,7 @@
     box-shadow: 0 2px 3px 3px rgba(0,0,0,0.2);
     transition: all .2s;
     cursor: pointer;
+    border-radius: 30px;
 }
 
 .card:hover {
@@ -19,12 +20,14 @@
     margin-top: 2rem;
     width: 15rem;
     height: 15rem;
+
+
 }
 
 .divider {
     border: 1px solid black;
     color: red;
-    width: 80%;
+    width: 100%;
 }
 
 .title {

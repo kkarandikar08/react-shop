@@ -10,7 +10,10 @@ const cartSlice = createSlice({
     name: 'cart',
     initialState: initialState,
     reducers: {
-        addToBag(state) {
+        addToBag(state, payload) {
+            if (!state.products.find(p => p.id === payload.product.id)) {
+                state.products.push(payload.product);
+            }
             state.totalQuantity++;
         }
     }

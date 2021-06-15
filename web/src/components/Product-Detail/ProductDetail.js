@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Header from "../Header/Header";
 
 import styles from './ProductDetail.module.css';
@@ -12,11 +12,11 @@ import { addToBag } from '../../store/cart-slice';
 
 
 const ProductDetail = () => {
+    const state = useSelector(state => state.productDetail.product);
     const dispatch = useDispatch();
 
     const addItemToCartHandler = () => {
         dispatch(addToBag());
-
     }
     return(
         <div className={styles.container}>
@@ -39,7 +39,7 @@ const ProductDetail = () => {
                                     <li>True to size</li>
                                     <li>Nordstrom Men's Shop Athletic fit; considered a Slim-Straight fit; relaxed through seat, tailored from knee to ankle.
                                     </li>
-                                    <li>Mid rise.
+                                    <li>Nordstrom's favorite
                                     </li>
                                 </ul>
                             </div>
@@ -76,15 +76,15 @@ const ProductDetail = () => {
                 </div>
                 <div className={styles["add-to-cart"]}>
                     <div className={styles.card}>
-                        <h3 className={styles.title}>India Cricket Team Blue Jersey</h3>
+                        <h3 className={styles.title}>{state.title} </h3>
                         <hr className={styles.divider}/>
-                        <h3>Price</h3>
                         <h4>Lorem Ipsum</h4>
                         <button onClick={addItemToCartHandler} className={styles["add-to-cart__button"]}>Add to Bag</button>
                     </div>
                 </div>
             </main>
         </div>
+
     )
 }
 

@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/kkarandikar08/react-shop#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "axios": "^0.21.1"
   }
 }

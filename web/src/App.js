@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React  from 'react';
 
 import Home from "./components/Home/Home";
 import Products from "./components/Products/Products";
 import ProductDetail from "./components/Product-Detail/ProductDetail";
-import  { BrowserRouter as Router, Switch, Route, Link }  from "react-router-dom";
+import  { BrowserRouter as Router, Switch, Route }  from "react-router-dom";
 
 function App() {
   return (

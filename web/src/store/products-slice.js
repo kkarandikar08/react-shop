@@ -13,7 +13,6 @@ const products = createSlice({
     reducers: {
         getProducts(state) {
             state.loading = true;
-            console.log('Works');
         },
         getProductsSuccess(state, payload) {
             state.loading = false
